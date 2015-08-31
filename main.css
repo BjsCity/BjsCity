@@ -1,0 +1,30 @@
+a {
+	color: white;
+       
+}
+
+col a {
+	color: black ;
+       
+}
+
+.col{
+    float: left;
+    background-color: FFFFFF;
+    margin: 1px 10px;
+    border-radius: 5px;   
+}
+
+body {
+	background-color:#FF3B3B
+
+}
+
+h1 {
+	color: white;
+}
+
+h3 {
+	color: white;
+}
+
