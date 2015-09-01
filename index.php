@@ -1,8 +1,24 @@
 <?php
+$to = 'dpqwerty100@gmail.com';
+$subject = 'A request from your website';
+$name = $_POST['name'];
+$email = $_POST['email'];
+$message = $_POST['msg'];
 
+$message = <<<EMAIL
 
+Hi This is $name here
+$message
+From $name
+My email is $email
 
+EMAIL;
 
+$header = 'hello';
+
+if(_POST){
+    mail($to,$subject,$message,$header);
+}
 ?>
 
 <!doctype html>
@@ -86,21 +102,21 @@
   <div class="form-group">
     <label for="inputname" class="col-sm-2 control-label">Name</label>
     <div class="col-sm-10">
-      <input type="text" class="form-control" name="name" id="inputname" placeholder="Name">
+      <input type="text" class="form-control" name="name" id="name" placeholder="Name">
     </div>
   </div>
 
   <div class="form-group">
     <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
     <div class="col-sm-10">
-      <input type="email" class="form-control" name="email" id="inputEmail3" placeholder="you@example.com">
+      <input type="email" class="form-control" name="email" id="email" placeholder="you@example.com">
     </div>
   </div>
 
   <div class="form-group">
     <label for="msg" class="col-sm-2 control-label">Message:</label>
     <div class="col-sm-10">
-      <textarea class="form-control" name="msg" rows="8"></textarea>
+      <textarea class="form-control" name="msg" id="msg" rows="8"></textarea>
     </div>
   </div>
 
