@@ -1,3 +1,10 @@
+<?php
+
+
+
+
+?>
+
 <!doctype html>
   <html>
     <head>
@@ -54,7 +61,7 @@
       </form>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#">About Bjs City</a></li>
-        <li><a href="#request" data-toggle="modal">Request</a></li>
+        <li><a href="#request" data-toggle="modal">Send Request</a></li>
 
           </ul>
         </li>
@@ -70,10 +77,49 @@
          <div class="modal-dialog">
            <div class="modal-content">
              <div class="modal-header">
-               <h4>
+               <h4 align="center">
                  Enter Your Request Here
                </h4>
-               <div class="modal-footer"><a class="btn btn-success" data-dismiss="modal">Cancel</a></div>
+               <div class="modal-body">
+
+                 <form action="?" method="post" class="form-horizontal">
+  <div class="form-group">
+    <label for="inputname" class="col-sm-2 control-label">Name</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" name="name" id="inputname" placeholder="Name">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" name="email" id="inputEmail3" placeholder="you@example.com">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="msg" class="col-sm-2 control-label">Message:</label>
+    <div class="col-sm-10">
+      <textarea class="form-control" name="msg" rows="8"></textarea>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox"> Pledge not to send mean comments.
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-default">Send</button>
+    </div>
+  </div>
+</form>
+               </div>
+               <div class="modal-footer"><a class="btn btn-warning" data-dismiss="modal">Cancel</a></div>
              </div>
            </div>
          </div>
